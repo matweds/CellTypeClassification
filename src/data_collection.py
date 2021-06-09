@@ -200,7 +200,7 @@ def count_data(path, output_path):
     plt.savefig(output_path, dpi=200)
 
 if __name__ == "__main__":
-    # get_morhpology('mouse')
+    get_morhpology('mouse')
 
     # get_image(MORPHOLOGIE_DATA_FILE_MOUSE)
 
