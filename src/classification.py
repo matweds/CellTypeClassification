@@ -12,11 +12,7 @@ import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
-# import os
-# import PIL
 import tensorflow as tf
-# import seaborn as sn
-# import pandas as pd
 import pathlib
 
 # Neural network
@@ -26,7 +22,6 @@ from tensorflow.keras.models import Sequential
 import tensorflow as tf
 
 # SVM Classifier
-from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
 
 import json
