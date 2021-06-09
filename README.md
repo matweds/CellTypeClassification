@@ -1,5 +1,6 @@
-# KEX VT21 
-Automatic classification of mouse cell types from digitally reconstructed images
+ 
+## Automatic classification of mouse cell types from digitally reconstructed images
+Code used for the study "A comparative study on machine learning models for automatic classification on cell types from digitally reconstructed images"
 ### Code
 #### data_collection.py
 Collects the data from neuromorpho.org's api
