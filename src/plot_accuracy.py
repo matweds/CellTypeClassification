@@ -2,7 +2,7 @@
 File to plot different graphs and tables for the results
 Authors: Mattias Wedin, Isak Bengtsson
 
-Sources
+Insperation
 https://github.com/MarcusJoakimKex2018/AutomaticClassification
 '''
 
@@ -11,13 +11,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from pathlib import Path
-from skimage.io import imread, imsave
-from skimage.color import rgb2grey
+from skimage.io import imread
 from skimage.transform import resize
 import json
 
 from skimage.color.colorconv import rgb2gray, rgba2rgb
-from tensorflow.python.ops.gen_array_ops import pad
 
 # Path to result unbalanced 
 PATH_TO_RESULT_UB = '../data/result_after10_unbalanced.json'
@@ -29,13 +27,13 @@ PATH_TO_RESULT_B = '../data/result_after10_balanced.json'
 PATH_TO_RESULT_ACC_B = '../data/result_after10_accuracy_balanced'
 PATH_TO_RESULT_IND_B = '../data/result_after10_accuracy_individual_unbalanced.json'
 
-
+# TODO Fix command line argument for different plots 
+# Change this to use different paths
 data_path = Path(PATH_TO_RESULT_UB)
 f = open(data_path)
 data = json.load(f)
 # Plot the accuracy for each model on each cell type
 def plot_cell_acc():
-    cell_acc = {}
     classifiers = [[] for i in range(3)]
     # path_ind = Path(PATH_TO_RESULT)
     fig = plt.figure()
@@ -81,7 +79,7 @@ def plot_cell_acc_box():
     cell_acc = {}
     classifiers = [[] for i in range(3)]
     # path_ind = Path(PATH_TO_RESULT_IND)
-    path_ind = Path(PATH_TO_RESULT_IND_BAL)
+    path_ind = Path(PATH_TO_RESULT_IND_L)
 
     f = open(path_ind)
     data_ind = json.load(f)
@@ -154,37 +152,12 @@ def plot_acc_boxplot():
     ax = fig.add_subplot(111)
     bp = ax.boxplot(data_array)
 
-
-
-    # # Plot overall accuracy for each model.
-    # for model, cells in data.items():
-    #     correct = 0
-    #     total = 0
-    #     for k, v in sorted(cells.items()):
-    #         correct += v[0]
-    #         total += v[0] + v[1]
-    #     if total == 0:
-    #         total = 1
-    #     meanAcc = round((correct / total)*100,3)
-    #     mean.append([model,meanAcc])
-
-    # print(mean)
-    # fig, ax =plt.subplots()
-    # # hide axes
-    # fig.patch.set_visible(False)
     ax.set_xticklabels(['SVM', 'Random Forest', 'CNN'])
     ax.set_ylim([0,1])
     plt.grid()
     plt.legend()
     plt.title("Model Comparison")
     plt.ylabel("Model accuracy (%)")
-    
-    # plt.show()
-
-    # collabel = ('Classifier', 'Mean Accuracy')
-    # ax.table(cellText=mean,colLabels=collabel,loc='center')
-    # axs[1].plot([i[0] for i in mean], [i[1] for i in mean])
-
     plt.savefig('../results/mean_acc_boxplot_balanced.png')
 
 def plot_acc_table():
@@ -266,13 +239,11 @@ def plot_images():
 
 def plot_celltypes():
     nr_of_each =[]
-    correct = {} 
     # Plot each cell, id and how many evaluated of each cell
     id = 0
     a = 0
     for model, cells in data.items():
         a+=1
-        correct = 0
         if a == 3:
             for k, v in sorted(cells.items()):
                 total = v[0] + v[1]
@@ -290,21 +261,20 @@ def plot_celltypes():
     fig.patch.set_visible(False)
     ax[0].axis('off')
     ax[1].axis('off')
-    # ax.axis('tight')
+
     fig.tight_layout(pad=2)
     plt.rc('font', size=(15))
     collabel = ('Cell Type', 'Nr of validated cells')
     i = 0
-    # for cell in nr_of_each:
-    #     plt.subplot(25, 2, i)
-    #     plt.table()
-    #     i += 1
+    
+
     ax[0].table(rowLabels=range(25), cellText=nr_of_each[:25],colLabels=collabel, loc='center')
     ax[1].table(rowLabels=range(25,50),cellText=nr_of_each[25:],colLabels=collabel, loc='center')
-    # axs[1].plot([i[0] for i in mean], [i[1] for i in mean])
     plt.savefig('../results/celltypes_new_cnn.png')
 
 if __name__ == '__main__':
+    # Change this to plot different plots
+
     # plot_images()
     # plot_acc_boxplot()
     # plot_cell_acc_box()  

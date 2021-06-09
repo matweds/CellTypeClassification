@@ -12,27 +12,16 @@ https://github.com/PraveenDubba/Image-Classification-using-Random-Forest/blob/ma
 from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
-from skimage.color.colorconv import rgba2rgb
-from sklearn import svm, metrics, datasets
+from sklearn import svm, metrics
 from sklearn.utils import Bunch
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import cross_val_predict
-from sklearn.metrics import plot_roc_curve
-from sklearn.svm import SVC
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import classification_report
 from sklearn.svm import SVC
 
-from classification import get_model, train_model, compile_model, get_data, config_dataset, run_test
 
 import skimage.io
-from skimage.io import imread
 from skimage.color import rgb2gray
 from skimage.transform import resize
-import resource
 
 import json
 
@@ -52,7 +41,6 @@ def load_img_files(container_path, dimension=(300, 300)):
     folders = [directory for directory in image_dir.iterdir() if directory.is_dir()]
     categories = [fo.name for fo in folders]
     descr = "A image classification dataset"
-    images = []
     flat_data = []
     target = []
     for i, direc in enumerate(folders):
@@ -61,9 +49,7 @@ def load_img_files(container_path, dimension=(300, 300)):
             img = skimage.io.imread(file)
             img_resized = resize(img, dimension, anti_aliasing=True, mode='reflect')
             img_resized = rgb2gray(img_resized)
-            # print(img_resized.shape)
             flat_data.append(img_resized.flatten()) 
-            # images.append(img_resized)
             target.append(i)
             # if(counter%500 == 0):
             #     print(counter)
@@ -72,12 +58,10 @@ def load_img_files(container_path, dimension=(300, 300)):
             counter+=1
     flat_data = np.array(flat_data, dtype=object)
     target = np.array(target)
-    # images = np.array(images, dtype=object)
 
     return Bunch(data=flat_data,
                  target=target,
                  target_names=categories,
-                #  images=images,
                  DESCR=descr)
 
 
@@ -138,12 +122,11 @@ def svm_classifier():
 
 # Run svm classifier
 #svm_classifier()
+
+
 # Random forest classifier, this is used to find an tuned model.
 def rf_classifier():
     forest_clf = RandomForestClassifier(random_state=42, verbose=True)
-    # y_pred_train = cross_val_predict(forest_clf, X_train,
-    #                                 y_train, cv=3,
-    #                                 method="predict_proba")
 
     # Not tuned in any way
     forest_clf.fit(X_train, y_train)
@@ -156,7 +139,7 @@ def rf_classifier():
     print(metrics.classification_report(y_true= y_test, y_pred= y_pred_test))
     # 0.67% accuracy
 
-    # Using Grid search for hyper paramter tuning
+    # Using Grid search for hyper parameter tuning
     print("\n ======= White gridseach =======")
     clf = GridSearchCV(forest_clf, param_grid={'n_estimators':[100,200],'min_samples_leaf':[2,3]})
     model = clf.fit(X_train,y_train)
@@ -175,25 +158,17 @@ def rf_classifier():
 
 # The full test
 
-# THe CNN data
-# train_ds, val_ds = get_data()
-
 RUNS = 10
 
+# The classifiers used for final test
 classifiers_name = ['SVC', 'Random Forest', 'CNN']
 classifiers = [svm.SVC(C=100, gamma=0.001, kernel='rbf'),
 RandomForestClassifier(min_samples_leaf=3, n_estimators=200)]
 
 print(image_dataset.target_names)
-# # Encoding categorical data
-# from sklearn.preprocessing import LabelEncoder
-# labelencoder_y = LabelEncoder()
-# y = labelencoder_y.fit_transform(image_dataset.target)
-
 
 # Scores
 from sklearn.metrics import accuracy_score
-# scores = [[] for i in range(len(classifiers))]
 scores = {}
 for clf in classifiers_name:
     scores[clf] = []
@@ -211,7 +186,6 @@ for i in range(len(classifiers_name)):
         scoreRatios[classifiers_name[i]][image_dataset.target_names[j]] = [0 , 0]
         
 
-# print(individualScoreRatios)
 
 for it in range(RUNS): # amount of runs for each classifiers.
     # Splitting the dataset into the Training set and Test set
@@ -233,22 +207,6 @@ for it in range(RUNS): # amount of runs for each classifiers.
                 individualScoreRatios[classifiers_name[i]][it][image_dataset.target_names[y_test[j]]][1] += 1
 
         
-
-
-
-# for i in range(len(classifiers)):
-#     print(classifiers_name[i], ((float(scores[i][0]))*100),'%')
-    
-# Run CNN
-# results = run_test(RUNS) 
-
-# def Merge(dict1, dict2):
-#     return(dict2.update(dict1))
-
-# Merge(results, scoreRatios)
-
-# print(scoreRatios)
-
 def convert(o):
     if isinstance(o, np.int64): return int(o)  
     raise TypeError
@@ -263,10 +221,3 @@ with open('../data/result_after10_accuracy_test_balanced.json', 'w', encoding='u
 with open('../data/result_after10_accuracy_individual_balanced.json', 'w', encoding='utf-8') as outfile:
     json.dump(individualScoreRatios, outfile, ensure_ascii=False, indent=4 ,default=convert)
 
-# # Plot confusion matrix svm
-# plot_confusion_matrix(clf, X_test, y_test)
-# plt.savefig('Confusion_Matrix_svm')
-
-# # Plot confusion matrix randomforest
-# plot_confusion_matrix(clf, X_test, y_test)
-# plt.savefig('Confusion_Matrix_randomforest')

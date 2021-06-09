@@ -16,13 +16,15 @@ MORPHO_URL = "http://neuromorpho.org/api/neuron/select?"
 
 #Morphologie json file
 MORPHOLOGIE_DATA_FILE_MOUSE = "../data/mouse.json"
-MOUSE_IMAGES = "../data/images/mouse_new/"
+MOUSE_IMAGES_UB = "../data/images/mouse_unbalanced/"
+MOUSE_IMAGES_B = "../data/images/mouse_balanced/"
+
 
 
 """
 Get the morphologie metadata from neuromorpho.org:s api and save to file
 """
-def get_morhpology(species, brain_region, path):
+def get_morhpology(species, path):
 
     # Query params. Not fully decided yet 
     #species = "mouse"
@@ -48,7 +50,7 @@ def get_morhpology(species, brain_region, path):
                 data["_embedded"]["neuronResources"].extend(new_data["_embedded"]["neuronResources"])
         
         # dump to file
-        with open(path, 'w', encoding='utf-8') as f:
+        with open(MORPHOLOGIE_DATA_FILE_MOUSE, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
 
 '''
@@ -86,8 +88,7 @@ def get_image(data_path, image_path):
     cell_types = {'pyramidal': ['neocortex'], 'medium spiny': ['striatum'], 'Purkinje': ['cerebellum']}
 
     # open morphology file
-    f = open(data_path)
-    print(data_path)
+    f = open(MORPHOLOGIE_DATA_FILE_MOUSE)
     data = json.load(f)
     # species = ""
     png_url = ""
@@ -170,14 +171,10 @@ def count_data(path, output_path):
     """ 
         Count the number of images in each subdirectory in a directory. 
     """
-    bad_images=[]
     number_of_images = []
     types = []
     # TODO change this to use pathdir
     s_dir = pathlib.Path(path)
-    # s_dir = r'/home/mattias/Skola/KEX/KEX_VT_21/data/images/mouse_new_filtered'
-    s_dir = r'/home/mattias/Skola/KEX/KEX_VT_21/data/images/mouse'
-    bad_ext=[]
     total = 0
     s_list= os.listdir(s_dir)
     for klass in sorted(s_list):
@@ -192,10 +189,6 @@ def count_data(path, output_path):
             else:
                 print(klass)
 
-    print(len(types))
-    print(number_of_images)
-    # print(number_of_images)
-    # print(types)
     # Plot distribution
     plt.rc('font', size=6.5)
     plt.xticks(rotation=-90)
@@ -207,14 +200,11 @@ def count_data(path, output_path):
     plt.savefig(output_path, dpi=200)
 
 if __name__ == "__main__":
-    count_data( '../data/data_distribution_unbalanced.png')
-    count_data('../data/data_distribution_unbalanced.png')
-    # get_morhpology("mouse", "neocortex", MORPHOLOGIE_DATA_FILE_MOUSE)
+    # get_morhpology('mouse')
 
-    # Get images, now only 10 each
-    # get_image(MORPHOLOGIE_DATA_FILE_MOUSE, MOUSE_IMAGES)
-    #get_image(MORPHOLOGIE_DATA_FILE_RAT, RAT_IMAGES)
-    #get_image(MORPHOLOGIE_DATA_FILE_MOUSE, MOUSE_IMAGES)
-    # refactor_images()
+    # get_image(MORPHOLOGIE_DATA_FILE_MOUSE)
+
+    # count_data('../data/images/mouse_unbalanced' ,'../data/data_distribution_unbalanced.png')
+    # count_data('../data/images/mouse_balanced','../data/data_distribution_balanced.png')
 
 
