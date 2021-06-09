@@ -1,0 +1,44 @@
+{
+    "SVC": {
+        "pyramidal": [
+            831,
+            300
+        ],
+        "Purkinje": [
+            996,
+            192
+        ],
+        "medium spiny": [
+            729,
+            412
+        ]
+    },
+    "Random Forest": {
+        "pyramidal": [
+            726,
+            405
+        ],
+        "Purkinje": [
+            963,
+            225
+        ],
+        "medium spiny": [
+            864,
+            277
+        ]
+    },
+    "CNN": {
+        "Purkinje": [
+            1039,
+            138
+        ],
+        "medium spiny": [
+            1010,
+            235
+        ],
+        "pyramidal": [
+            815,
+            213
+        ]
+    }
+}

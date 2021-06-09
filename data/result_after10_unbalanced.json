@@ -1,0 +1,596 @@
+{
+    "SVC": {
+        "pyramidal_neocortex": [
+            758,
+            2210
+        ],
+        "Golgi": [
+            0,
+            92
+        ],
+        "thalamocortical": [
+            27,
+            641
+        ],
+        "Vasoactive Intestinal Peptide (VIP)-positive": [
+            4,
+            193
+        ],
+        "pyramidal_entorhinal cortex": [
+            0,
+            70
+        ],
+        "bipolar": [
+            1298,
+            424
+        ],
+        "pyramidal_subiculum": [
+            63,
+            318
+        ],
+        "pyramidal_amygdala": [
+            20,
+            363
+        ],
+        "prion protein (PrP) promoter-positive": [
+            44,
+            177
+        ],
+        "pyramidal_thalamus": [
+            53,
+            187
+        ],
+        "Motoneuron": [
+            206,
+            1382
+        ],
+        "Chandelier": [
+            115,
+            337
+        ],
+        "corticothalamic": [
+            0,
+            84
+        ],
+        "low-threshold calcium spiking": [
+            0,
+            103
+        ],
+        "Neuropeptide Y (NPY)-positive": [
+            36,
+            248
+        ],
+        "shrub cell": [
+            0,
+            44
+        ],
+        "pyramidal_brainstem": [
+            0,
+            38
+        ],
+        "ganglion": [
+            1898,
+            1094
+        ],
+        "translocating": [
+            0,
+            44
+        ],
+        "pyramidal_mesencephalon": [
+            0,
+            35
+        ],
+        "Neuronal Nitric Oxide Synthase (nNOS)-positive": [
+            0,
+            35
+        ],
+        "Thick-tufted": [
+            3,
+            35
+        ],
+        "Midbrain-projecting": [
+            0,
+            33
+        ],
+        "neurogliaform": [
+            79,
+            141
+        ],
+        "pyramidal_olfactory cortex": [
+            8,
+            164
+        ],
+        "bitufted": [
+            2,
+            56
+        ],
+        "single bouquet": [
+            0,
+            34
+        ],
+        "periglomerular": [
+            2,
+            394
+        ],
+        "mitral": [
+            0,
+            272
+        ],
+        "callosal-projecting": [
+            0,
+            126
+        ],
+        "amacrine": [
+            322,
+            1017
+        ],
+        "dopaminergic": [
+            108,
+            1421
+        ],
+        "tufted": [
+            0,
+            130
+        ],
+        "Steroid Hormone Receptor Ad4BP-positive": [
+            5,
+            94
+        ],
+        "Purkinje": [
+            331,
+            457
+        ],
+        "stellate": [
+            51,
+            992
+        ],
+        "granule": [
+            2010,
+            962
+        ],
+        "Martinotti": [
+            26,
+            479
+        ],
+        "deep projecting cell": [
+            0,
+            32
+        ],
+        "pyramidal_corpus callosum": [
+            0,
+            37
+        ],
+        "pyramidal_hippocampus": [
+            922,
+            2183
+        ],
+        "pyramidal_cortex": [
+            0,
+            20
+        ],
+        "medium spiny": [
+            872,
+            2085
+        ],
+        "Serotonin receptor type 3A(5HT3)-positive": [
+            1,
+            85
+        ],
+        "Somatostatin (SOM)-positive": [
+            19,
+            945
+        ],
+        "pyramidal_anterior olfactory nucleus": [
+            1,
+            83
+        ],
+        "horizontally elongated": [
+            1,
+            46
+        ],
+        "tyrosine-hydroxylase-positive": [
+            5,
+            55
+        ],
+        "Cajal-Retzius": [
+            8,
+            305
+        ]
+    },
+    "Random Forest": {
+        "pyramidal_neocortex": [
+            900,
+            2068
+        ],
+        "Golgi": [
+            0,
+            92
+        ],
+        "thalamocortical": [
+            37,
+            631
+        ],
+        "Vasoactive Intestinal Peptide (VIP)-positive": [
+            0,
+            197
+        ],
+        "pyramidal_entorhinal cortex": [
+            0,
+            70
+        ],
+        "bipolar": [
+            1353,
+            369
+        ],
+        "pyramidal_subiculum": [
+            5,
+            376
+        ],
+        "pyramidal_amygdala": [
+            6,
+            377
+        ],
+        "prion protein (PrP) promoter-positive": [
+            0,
+            221
+        ],
+        "pyramidal_thalamus": [
+            0,
+            240
+        ],
+        "Motoneuron": [
+            61,
+            1527
+        ],
+        "Chandelier": [
+            14,
+            438
+        ],
+        "corticothalamic": [
+            0,
+            84
+        ],
+        "low-threshold calcium spiking": [
+            0,
+            103
+        ],
+        "Neuropeptide Y (NPY)-positive": [
+            0,
+            284
+        ],
+        "shrub cell": [
+            0,
+            44
+        ],
+        "pyramidal_brainstem": [
+            0,
+            38
+        ],
+        "ganglion": [
+            2567,
+            425
+        ],
+        "translocating": [
+            0,
+            44
+        ],
+        "pyramidal_mesencephalon": [
+            0,
+            35
+        ],
+        "Neuronal Nitric Oxide Synthase (nNOS)-positive": [
+            0,
+            35
+        ],
+        "Thick-tufted": [
+            0,
+            38
+        ],
+        "Midbrain-projecting": [
+            0,
+            33
+        ],
+        "neurogliaform": [
+            23,
+            197
+        ],
+        "pyramidal_olfactory cortex": [
+            0,
+            172
+        ],
+        "bitufted": [
+            0,
+            58
+        ],
+        "single bouquet": [
+            0,
+            34
+        ],
+        "periglomerular": [
+            0,
+            396
+        ],
+        "mitral": [
+            0,
+            272
+        ],
+        "callosal-projecting": [
+            0,
+            126
+        ],
+        "amacrine": [
+            78,
+            1261
+        ],
+        "dopaminergic": [
+            85,
+            1444
+        ],
+        "tufted": [
+            0,
+            130
+        ],
+        "Steroid Hormone Receptor Ad4BP-positive": [
+            0,
+            99
+        ],
+        "Purkinje": [
+            171,
+            617
+        ],
+        "stellate": [
+            8,
+            1035
+        ],
+        "granule": [
+            2045,
+            927
+        ],
+        "Martinotti": [
+            0,
+            505
+        ],
+        "deep projecting cell": [
+            0,
+            32
+        ],
+        "pyramidal_corpus callosum": [
+            0,
+            37
+        ],
+        "pyramidal_hippocampus": [
+            1321,
+            1784
+        ],
+        "pyramidal_cortex": [
+            0,
+            20
+        ],
+        "medium spiny": [
+            1145,
+            1812
+        ],
+        "Serotonin receptor type 3A(5HT3)-positive": [
+            1,
+            85
+        ],
+        "Somatostatin (SOM)-positive": [
+            0,
+            964
+        ],
+        "pyramidal_anterior olfactory nucleus": [
+            0,
+            84
+        ],
+        "horizontally elongated": [
+            0,
+            47
+        ],
+        "tyrosine-hydroxylase-positive": [
+            5,
+            55
+        ],
+        "Cajal-Retzius": [
+            6,
+            307
+        ]
+    },
+    "CNN": {
+        "Cajal-Retzius": [
+            117,
+            146
+        ],
+        "Chandelier": [
+            256,
+            215
+        ],
+        "Golgi": [
+            17,
+            39
+        ],
+        "Martinotti": [
+            85,
+            313
+        ],
+        "Midbrain-projecting": [
+            7,
+            12
+        ],
+        "Motoneuron": [
+            749,
+            898
+        ],
+        "Neuronal Nitric Oxide Synthase (nNOS)-positive": [
+            1,
+            30
+        ],
+        "Neuropeptide Y (NPY)-positive": [
+            42,
+            221
+        ],
+        "Purkinje": [
+            646,
+            194
+        ],
+        "Serotonin receptor type 3A(5HT3)-positive": [
+            0,
+            30
+        ],
+        "Somatostatin (SOM)-positive": [
+            259,
+            637
+        ],
+        "Steroid Hormone Receptor Ad4BP-positive": [
+            23,
+            52
+        ],
+        "Thick-tufted": [
+            28,
+            4
+        ],
+        "Vasoactive Intestinal Peptide (VIP)-positive": [
+            13,
+            160
+        ],
+        "amacrine": [
+            891,
+            523
+        ],
+        "bipolar": [
+            1387,
+            380
+        ],
+        "bitufted": [
+            6,
+            26
+        ],
+        "callosal-projecting": [
+            22,
+            33
+        ],
+        "corticothalamic": [
+            33,
+            33
+        ],
+        "deep projecting cell": [
+            1,
+            22
+        ],
+        "dopaminergic": [
+            658,
+            673
+        ],
+        "ganglion": [
+            2547,
+            835
+        ],
+        "granule": [
+            2319,
+            921
+        ],
+        "horizontally elongated": [
+            4,
+            6
+        ],
+        "low-threshold calcium spiking": [
+            0,
+            50
+        ],
+        "medium spiny": [
+            1573,
+            2037
+        ],
+        "mitral": [
+            14,
+            94
+        ],
+        "neurogliaform": [
+            112,
+            175
+        ],
+        "periglomerular": [
+            20,
+            160
+        ],
+        "prion protein (PrP) promoter-positive": [
+            76,
+            77
+        ],
+        "pyramidal_amygdala": [
+            52,
+            264
+        ],
+        "pyramidal_anterior olfactory nucleus": [
+            11,
+            38
+        ],
+        "pyramidal_brainstem": [
+            1,
+            15
+        ],
+        "pyramidal_corpus callosum": [
+            1,
+            11
+        ],
+        "pyramidal_cortex": [
+            11,
+            3
+        ],
+        "pyramidal_entorhinal cortex": [
+            4,
+            26
+        ],
+        "pyramidal_hippocampus": [
+            1521,
+            1810
+        ],
+        "pyramidal_mesencephalon": [
+            0,
+            9
+        ],
+        "pyramidal_neocortex": [
+            1373,
+            1728
+        ],
+        "pyramidal_olfactory cortex": [
+            50,
+            52
+        ],
+        "pyramidal_subiculum": [
+            158,
+            173
+        ],
+        "pyramidal_thalamus": [
+            108,
+            156
+        ],
+        "shrub cell": [
+            3,
+            13
+        ],
+        "single bouquet": [
+            0,
+            9
+        ],
+        "stellate": [
+            255,
+            587
+        ],
+        "thalamocortical": [
+            310,
+            351
+        ],
+        "translocating": [
+            1,
+            8
+        ],
+        "tufted": [
+            13,
+            51
+        ],
+        "tyrosine-hydroxylase-positive": [
+            2,
+            10
+        ]
+    }
+}

@@ -1,0 +1,428 @@
+{
+    "SVC": {
+        "0": {
+            "pyramidal": [
+                84,
+                29
+            ],
+            "Purkinje": [
+                92,
+                19
+            ],
+            "medium spiny": [
+                70,
+                52
+            ]
+        },
+        "1": {
+            "pyramidal": [
+                79,
+                29
+            ],
+            "Purkinje": [
+                102,
+                9
+            ],
+            "medium spiny": [
+                69,
+                58
+            ]
+        },
+        "2": {
+            "pyramidal": [
+                68,
+                21
+            ],
+            "Purkinje": [
+                110,
+                17
+            ],
+            "medium spiny": [
+                81,
+                49
+            ]
+        },
+        "3": {
+            "pyramidal": [
+                90,
+                28
+            ],
+            "Purkinje": [
+                87,
+                8
+            ],
+            "medium spiny": [
+                73,
+                60
+            ]
+        },
+        "4": {
+            "pyramidal": [
+                87,
+                25
+            ],
+            "Purkinje": [
+                96,
+                23
+            ],
+            "medium spiny": [
+                63,
+                52
+            ]
+        },
+        "5": {
+            "pyramidal": [
+                88,
+                30
+            ],
+            "Purkinje": [
+                75,
+                31
+            ],
+            "medium spiny": [
+                77,
+                45
+            ]
+        },
+        "6": {
+            "pyramidal": [
+                85,
+                36
+            ],
+            "Purkinje": [
+                88,
+                19
+            ],
+            "medium spiny": [
+                71,
+                47
+            ]
+        },
+        "7": {
+            "pyramidal": [
+                86,
+                32
+            ],
+            "Purkinje": [
+                92,
+                17
+            ],
+            "medium spiny": [
+                68,
+                51
+            ]
+        },
+        "8": {
+            "pyramidal": [
+                93,
+                31
+            ],
+            "Purkinje": [
+                98,
+                17
+            ],
+            "medium spiny": [
+                60,
+                47
+            ]
+        },
+        "9": {
+            "pyramidal": [
+                94,
+                36
+            ],
+            "Purkinje": [
+                88,
+                22
+            ],
+            "medium spiny": [
+                68,
+                38
+            ]
+        }
+    },
+    "Random Forest": {
+        "0": {
+            "pyramidal": [
+                73,
+                40
+            ],
+            "Purkinje": [
+                89,
+                22
+            ],
+            "medium spiny": [
+                88,
+                34
+            ]
+        },
+        "1": {
+            "pyramidal": [
+                75,
+                33
+            ],
+            "Purkinje": [
+                97,
+                14
+            ],
+            "medium spiny": [
+                88,
+                39
+            ]
+        },
+        "2": {
+            "pyramidal": [
+                67,
+                22
+            ],
+            "Purkinje": [
+                106,
+                21
+            ],
+            "medium spiny": [
+                95,
+                35
+            ]
+        },
+        "3": {
+            "pyramidal": [
+                81,
+                37
+            ],
+            "Purkinje": [
+                85,
+                10
+            ],
+            "medium spiny": [
+                85,
+                48
+            ]
+        },
+        "4": {
+            "pyramidal": [
+                79,
+                33
+            ],
+            "Purkinje": [
+                97,
+                22
+            ],
+            "medium spiny": [
+                83,
+                32
+            ]
+        },
+        "5": {
+            "pyramidal": [
+                75,
+                43
+            ],
+            "Purkinje": [
+                70,
+                36
+            ],
+            "medium spiny": [
+                92,
+                30
+            ]
+        },
+        "6": {
+            "pyramidal": [
+                76,
+                45
+            ],
+            "Purkinje": [
+                86,
+                21
+            ],
+            "medium spiny": [
+                88,
+                30
+            ]
+        },
+        "7": {
+            "pyramidal": [
+                81,
+                37
+            ],
+            "Purkinje": [
+                88,
+                21
+            ],
+            "medium spiny": [
+                75,
+                44
+            ]
+        },
+        "8": {
+            "pyramidal": [
+                81,
+                43
+            ],
+            "Purkinje": [
+                94,
+                21
+            ],
+            "medium spiny": [
+                77,
+                30
+            ]
+        },
+        "9": {
+            "pyramidal": [
+                81,
+                49
+            ],
+            "Purkinje": [
+                80,
+                30
+            ],
+            "medium spiny": [
+                85,
+                21
+            ]
+        }
+    },
+    "CNN": {
+        "0": {
+            "Purkinje": [
+                103,
+                16
+            ],
+            "medium spiny": [
+                104,
+                23
+            ],
+            "pyramidal": [
+                79,
+                20
+            ]
+        },
+        "1": {
+            "Purkinje": [
+                102,
+                17
+            ],
+            "medium spiny": [
+                99,
+                25
+            ],
+            "pyramidal": [
+                79,
+                23
+            ]
+        },
+        "2": {
+            "Purkinje": [
+                106,
+                10
+            ],
+            "medium spiny": [
+                106,
+                23
+            ],
+            "pyramidal": [
+                81,
+                19
+            ]
+        },
+        "3": {
+            "Purkinje": [
+                106,
+                16
+            ],
+            "medium spiny": [
+                95,
+                20
+            ],
+            "pyramidal": [
+                84,
+                24
+            ]
+        },
+        "4": {
+            "Purkinje": [
+                104,
+                18
+            ],
+            "medium spiny": [
+                102,
+                19
+            ],
+            "pyramidal": [
+                82,
+                20
+            ]
+        },
+        "5": {
+            "Purkinje": [
+                103,
+                11
+            ],
+            "medium spiny": [
+                96,
+                26
+            ],
+            "pyramidal": [
+                80,
+                29
+            ]
+        },
+        "6": {
+            "Purkinje": [
+                103,
+                13
+            ],
+            "medium spiny": [
+                101,
+                26
+            ],
+            "pyramidal": [
+                81,
+                21
+            ]
+        },
+        "7": {
+            "Purkinje": [
+                106,
+                14
+            ],
+            "medium spiny": [
+                100,
+                20
+            ],
+            "pyramidal": [
+                83,
+                22
+            ]
+        },
+        "8": {
+            "Purkinje": [
+                104,
+                12
+            ],
+            "medium spiny": [
+                100,
+                27
+            ],
+            "pyramidal": [
+                79,
+                23
+            ]
+        },
+        "9": {
+            "Purkinje": [
+                104,
+                15
+            ],
+            "medium spiny": [
+                101,
+                28
+            ],
+            "pyramidal": [
+                78,
+                19
+            ]
+        }
+    }
+}

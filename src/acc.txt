@@ -1,0 +1,153 @@
+SVC
+Cajal-Retzius 2.556
+Chandelier 25.442
+Golgi 0.0
+Martinotti 5.149
+Midbrain-projecting 0.0
+Motoneuron 12.972
+Neuronal Nitric Oxide Synthase (nNOS)-positive 0.0
+Neuropeptide Y (NPY)-positive 12.676
+Purkinje 42.005
+Serotonin receptor type 3A(5HT3)-positive 1.163
+Somatostatin (SOM)-positive 1.971
+Steroid Hormone Receptor Ad4BP-positive 5.051
+Thick-tufted 7.895
+Vasoactive Intestinal Peptide (VIP)-positive 2.03
+amacrine 24.048
+bipolar 75.377
+bitufted 3.448
+callosal-projecting 0.0
+corticothalamic 0.0
+deep projecting cell 0.0
+dopaminergic 7.063
+ganglion 63.436
+granule 67.631
+horizontally elongated 2.128
+low-threshold calcium spiking 0.0
+medium spiny 29.489
+mitral 0.0
+neurogliaform 35.909
+periglomerular 0.505
+prion protein (PrP) promoter-positive 19.91
+pyramidal_amygdala 5.222
+pyramidal_anterior olfactory nucleus 1.19
+pyramidal_brainstem 0.0
+pyramidal_corpus callosum 0.0
+pyramidal_cortex 0.0
+pyramidal_entorhinal cortex 0.0
+pyramidal_hippocampus 29.694
+pyramidal_mesencephalon 0.0
+pyramidal_neocortex 25.539
+pyramidal_olfactory cortex 4.651
+pyramidal_subiculum 16.535
+pyramidal_thalamus 22.083
+shrub cell 0.0
+single bouquet 0.0
+stellate 4.89
+thalamocortical 4.042
+translocating 0.0
+tufted 0.0
+tyrosine-hydroxylase-positive 8.333
+----------------------------------------------
+Random Forest
+Cajal-Retzius 1.917
+Chandelier 3.097
+Golgi 0.0
+Martinotti 0.0
+Midbrain-projecting 0.0
+Motoneuron 3.841
+Neuronal Nitric Oxide Synthase (nNOS)-positive 0.0
+Neuropeptide Y (NPY)-positive 0.0
+Purkinje 21.701
+Serotonin receptor type 3A(5HT3)-positive 1.163
+Somatostatin (SOM)-positive 0.0
+Steroid Hormone Receptor Ad4BP-positive 0.0
+Thick-tufted 0.0
+Vasoactive Intestinal Peptide (VIP)-positive 0.0
+amacrine 5.825
+bipolar 78.571
+bitufted 0.0
+callosal-projecting 0.0
+corticothalamic 0.0
+deep projecting cell 0.0
+dopaminergic 5.559
+ganglion 85.795
+granule 68.809
+horizontally elongated 0.0
+low-threshold calcium spiking 0.0
+medium spiny 38.722
+mitral 0.0
+neurogliaform 10.455
+periglomerular 0.0
+prion protein (PrP) promoter-positive 0.0
+pyramidal_amygdala 1.567
+pyramidal_anterior olfactory nucleus 0.0
+pyramidal_brainstem 0.0
+pyramidal_corpus callosum 0.0
+pyramidal_cortex 0.0
+pyramidal_entorhinal cortex 0.0
+pyramidal_hippocampus 42.544
+pyramidal_mesencephalon 0.0
+pyramidal_neocortex 30.323
+pyramidal_olfactory cortex 0.0
+pyramidal_subiculum 1.312
+pyramidal_thalamus 0.0
+shrub cell 0.0
+single bouquet 0.0
+stellate 0.767
+thalamocortical 5.539
+translocating 0.0
+tufted 0.0
+tyrosine-hydroxylase-positive 8.333
+----------------------------------------------
+CNN
+Cajal-Retzius 44.487
+Chandelier 54.352
+Golgi 30.357
+Martinotti 21.357
+Midbrain-projecting 36.842
+Motoneuron 45.477
+Neuronal Nitric Oxide Synthase (nNOS)-positive 3.226
+Neuropeptide Y (NPY)-positive 15.97
+Purkinje 76.905
+Serotonin receptor type 3A(5HT3)-positive 0.0
+Somatostatin (SOM)-positive 28.906
+Steroid Hormone Receptor Ad4BP-positive 30.667
+Thick-tufted 87.5
+Vasoactive Intestinal Peptide (VIP)-positive 7.514
+amacrine 63.013
+bipolar 78.495
+bitufted 18.75
+callosal-projecting 40.0
+corticothalamic 50.0
+deep projecting cell 4.348
+dopaminergic 49.437
+ganglion 75.31
+granule 71.574
+horizontally elongated 40.0
+low-threshold calcium spiking 0.0
+medium spiny 43.573
+mitral 12.963
+neurogliaform 39.024
+periglomerular 11.111
+prion protein (PrP) promoter-positive 49.673
+pyramidal_amygdala 16.456
+pyramidal_anterior olfactory nucleus 22.449
+pyramidal_brainstem 6.25
+pyramidal_corpus callosum 8.333
+pyramidal_cortex 78.571
+pyramidal_entorhinal cortex 13.333
+pyramidal_hippocampus 45.662
+pyramidal_mesencephalon 0.0
+pyramidal_neocortex 44.276
+pyramidal_olfactory cortex 49.02
+pyramidal_subiculum 47.734
+pyramidal_thalamus 40.909
+shrub cell 18.75
+single bouquet 0.0
+stellate 30.285
+thalamocortical 46.899
+translocating 11.111
+tufted 20.312
+tyrosine-hydroxylase-positive 16.667
+----------------------------------------------
